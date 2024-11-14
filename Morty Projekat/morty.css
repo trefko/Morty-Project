@@ -40,6 +40,11 @@
 .prev,
 .next {
   margin: 7px;
+  border-radius: 50px;
+  color: black;
+  background-color: white;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
 }
 body {
   background-image: url("https://www.theshirtlist.com/wp-content/uploads/2021/02/RICK-AND-MARTY-e1616281602588.jpg");
@@ -47,4 +52,16 @@ body {
 
 .counter {
   color: white;
+}
+
+.heading {
+  display: flex;
+  justify-content: left;
+  font-size: xx-large;
+  font-family: "morty";
+}
+
+@font-face {
+  font-family: "morty";
+  src: url("./get_schwifty.ttf");
 }
