@@ -42,7 +42,6 @@ function showCharacters(data) {
     mortyDiv.style.position = "relative";
     mortyDiv.append(mortyImage, mortyText, mortyButton, infoBox);
 
-    // Check if the character has been "Liked" before (using localStorage)
     const likedCharacters =
       JSON.parse(localStorage.getItem("likedCharacters")) || {};
     if (likedCharacters[e.id]) {
@@ -60,9 +59,9 @@ function showCharacters(data) {
     mortyButton.addEventListener("click", function () {
       if (mortyButton.style.backgroundColor === "green") {
         mortyButton.style.backgroundColor = "";
-        delete likedCharacters[e.id]; // Remove from localStorage
+        delete likedCharacters[e.id];
       } else {
-        mortyButton.style.backgroundColor = "green"; // Like
+        mortyButton.style.backgroundColor = "green";
         likedCharacters[e.id] = true; // Add to localStorage
       }
 

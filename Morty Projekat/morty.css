@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  gap: 1px;
 }
 
 .container > div {
